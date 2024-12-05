@@ -77,7 +77,7 @@ for num in matrix_1:
             flag = False
             break
     mid = (len(num)//2)
-    if flag:
+    if flag == False:
         print(temp[mid])
         result += temp[mid]
 
