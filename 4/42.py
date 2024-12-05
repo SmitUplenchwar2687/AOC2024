@@ -19,9 +19,6 @@ def xmas_count(matrix):
     return final
                     
                     
-
-
-
 def read_matrix_from_file(file_path):
     matrix = []
     with open(file_path, 'r') as file:
