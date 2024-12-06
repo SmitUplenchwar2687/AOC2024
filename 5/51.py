@@ -18,7 +18,8 @@ class ordering:
         for num in arr1:
             self.helper(num)
         return self.res
-   
+
+
     def helper(self, temp):
         if temp in self.rest:
             return
