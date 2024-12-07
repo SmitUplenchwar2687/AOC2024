@@ -170,11 +170,7 @@ matrix = read_input_from_file(file_path)
 
 start = guard_start(matrix)
 
-#count, visited = guard_steps_visit(matrix, start)
-
 print(guard_loop(matrix, start))
 
-#print(start)
 
-#print(guard_steps(matrix, start))
 
