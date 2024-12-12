@@ -1,26 +1,34 @@
-from functools import cache
-
 def read_input(path):
     with open(path, "r") as file:
         for line in file:
             row = [int(x) for x in line.strip().split(" ")]
     return row
 
-@cache
-def count(stone, steps):
-    if steps == 0:
-        return 1
-    if stone == 0:
-        return count(1, steps-1)
-    s = str(stone)
-    n = len(s)
-    if n % 2 == 0:
-        s1 = int(s[:n//2])
-        s2 = int(s[n//2:])
-        return count(s1, steps-1) + count(s2, steps-1)
-    else:
-        return count(stone*2024, steps-1)      
+map = {}
 
+def count(stone, steps):
+    key = (stone, steps)
+    
+    if key in map:
+        return map[key]
+    
+    if steps == 0:
+        res = 1
+    elif stone == 0:
+        res = count(1, steps-1)
+    else: 
+        s = str(stone)
+        n = len(s)
+        if n % 2 == 0:
+            s1 = int(s[:n//2])
+            s2 = int(s[n//2:])
+            res = count(s1, steps-1) + count(s2, steps-1)
+        else:
+            res = count(stone*2024, steps-1)
+    
+    map[key] = res
+    return res
+          
 def stones(arr):
     sum1 = 0
     for num in arr:
