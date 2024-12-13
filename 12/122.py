@@ -75,7 +75,6 @@ def fence(matrix):
                             peri += 1
                         elif matrix[up][c]!=temp and matrix[r][right]!=temp:
                             peri+=1
-                print(peri, area, "peri , area")
                 sum += peri * area
     return sum
 
