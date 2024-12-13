@@ -1,6 +1,6 @@
 # Advent of Code Solutions 🎄✨
 
-Welcome to my repository of solutions for the [Advent of Code](https://adventofcode.com/) competition! This repository contains my answers to the daily programming challenges, written in [insert language(s) used, e.g., Python, JavaScript, etc.].
+Welcome to my repository of solutions for the [Advent of Code](https://adventofcode.com/) competition! This repository contains my answers to the daily programming challenges, written in Python.
 
 ## About Advent of Code
 
@@ -10,13 +10,7 @@ Advent of Code is an annual programming event that runs from December 1st to 25t
 
 The repository is organized as follows:
 
-AOC2024/
-├── 1/           # Day 1 solution
-├── 2/           # Day 2 solution
-├── ...
-├── 13/          # Day 13 solution
-├── temp.py      # Temporary or utility scripts
-└── README.md    # This file
+The repository is organized by day, where each folder contains solutions for a specific day's challenge.
 
 ## Tools & Technologies 🛠️
 
